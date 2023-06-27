@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 33%;
+  height: 100%;
+  padding: 170px;
+  padding: 0 70px 72px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header h1 {
+  color: #e7463c;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+header h3 {
+  color: #e7463c;
+  font-size: 2.5rem;
+}
+header p {
+  color: #e7463c;
+  font-size: 2rem;
+  text-align: justify;
+}
+header h6 {
+  color: lightgray;
+}
+
+main {
+  margin-left: 33%;
+  border: 1px solid lightgray;
+}
+main .topbar {
+  width: 67%;
+  height: 140px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 70%;
+  background-color: #e7463c;
+  font-size: 1.5rem;
+  border: 1px solid lightgray;
+}
+main .emptytopbar {
+  height: 140px;
+  position: relative;
+  top: 0;
+  right: 0;
+  top: 0px;
+  background-color: #e7463c;
+  z-index: -1;
+}
+main .wrapper {
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .wrapper .movie {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 5%, transparent, transparent, transparent, transparent) #e7463c;
+  padding: 70px;
+  display: flexbox;
+  justify-content: space-between;
+  align-items: center;
+}
+main .wrapper .movie h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+main .wrapper .movie h6 {
+  font-size: 1.5rem;
+  color: white;
+}
+main .wrapper .movie h5 {
+  font-size: 1.5rem;
+  color: #821d17;
+}
+main .wrapper .movie .movieDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main .wrapper .movie .comment {
+  display: flex;
+  flex-direction: column;
+}
+main .wrapper .movie .comment .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main .wrapper .movie .comment .commentList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .wrapper img {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
