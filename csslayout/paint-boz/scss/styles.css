@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/font/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Caladea";
+  src: url("/font/Caladea/Caladea-Regular.ttf");
+}
+.fBox .wordbox button, .fBox .wordbox h6, header .rightmenu div, header .leftmenu {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.fBox .wordbox h1 {
+  font-family: "Caladea";
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.fBox .wordbox button {
+  width: 238px;
+  height: 53px;
+  border: black solid 1px;
+  transition: 1s;
+}
+.fBox .wordbox button:hover {
+  background-color: white;
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+}
+
+body {
+  margin-left: 9.7%;
+  margin-right: 9.7%;
+  height: 100vh;
+  margin-top: 0;
+}
+
+.emptytop {
+  height: 110px;
+}
+
+header {
+  display: flex;
+  height: 110px;
+  margin-top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  z-index: 99;
+}
+header .leftmenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .leftmenu a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+header .leftmenu img {
+  width: 48px;
+  height: 48px;
+  padding-right: 40px;
+}
+header .rightmenu {
+  display: flex;
+  padding-right: 20vw;
+  justify-content: space-between;
+  align-items: center;
+}
+header .rightmenu div {
+  display: flex;
+  font-size: 1.2rem;
+  width: 204px;
+  height: 44px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+header .rightmenu .search {
+  border: none;
+  background-color: white;
+  font-size: large;
+  margin: 5px;
+}
+header .rightmenu .shoppingCart {
+  border: none;
+  background-color: white;
+  font-size: large;
+}
+
+.fBox {
+  height: 100vh;
+  color: white;
+}
+.fBox .wordbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80.6vw;
+  height: 100vh;
+}
+.fBox .wordbox h6 {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.fBox .wordbox h1 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+.fBox .wordbox button {
+  display: flexbox;
+  justify-items: center;
+  background-color: transparent;
+}
+.fBox img {
+  width: 80.6vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}/*# sourceMappingURL=styles.css.map */

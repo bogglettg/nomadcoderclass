@@ -1,0 +1,117 @@
+@import "_variable";
+@import "_mixins";
+@import "_extend";
+
+// font
+// @font-face {
+//     font-family: "Montserrat";
+//     src: url("/font/Montserrat/Montserrat-VariableFont_wght.ttf");
+// }
+
+html {
+    font-size: 10px;
+    margin: 0;
+}
+
+body {
+    margin-left: $totalMargin;
+    margin-right: $totalMargin;
+    height: 100vh;
+    margin-top: 0;
+}
+
+.emptytop {
+    height: 110px;
+}
+
+header {
+    display: flex;
+    height: 110px;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: $bgc;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    z-index: 99;
+    .leftmenu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @extend %smallfont;
+        a {
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        img {
+            width: 48px;
+            height: 48px;
+            padding-right: 40px;
+        }
+    }
+    .rightmenu {
+        display: flex;
+        padding-right: 20vw;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            display: flex;
+            @extend %smallfont;
+            font-size: 1.2rem;
+            width: 204px;
+            height: 44px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+        }
+        .search {
+            border: none;
+            background-color: white;
+            font-size: large;
+            margin: 5px;
+        }
+        .shoppingCart {
+            border: none;
+            background-color: white;
+            font-size: large;
+        }
+    }
+}
+
+.fBox {
+    height: 100vh;
+    color: white;
+    .wordbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80.6vw;
+        height: 100vh;
+        h6 {
+            @extend %smallfont;
+            font-size: 1rem;
+            color: $bgc;
+        }
+        h1 {
+            @extend %bigfont;
+            font-size: 5rem;
+            margin-top: 1rem;
+        }
+        button {
+            display: flexbox;
+            justify-items: center;
+            @extend %btns;
+            @extend %smallfont;
+            background-color: transparent;
+        }
+    }
+    img {
+        width: 80.6vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+}

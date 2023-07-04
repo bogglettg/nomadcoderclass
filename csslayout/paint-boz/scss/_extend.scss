@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/font/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Caladea";
+    src: url("/font/Caladea/Caladea-Regular.ttf");
+}
+
+%smallfont {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+%bigfont {
+    font-family: "Caladea";
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+%btns {
+    &:hover {
+        background-color: white;
+    }
+    width: 238px;
+    height: 53px;
+    border: black solid 1px;
+    transition: 1s;
+}
